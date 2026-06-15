@@ -5,21 +5,21 @@
 class ForgeAi < Formula
   desc "Forge workflow CLI for AI agents"
   homepage "https://github.com/robsonferr/forgeai"
-  version "0.4.1-snapshot"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/robsonferr/forgeai/releases/download/v0.4.0/forge-ai_0.4.1-snapshot_darwin_x86_64.tar.gz"
-      sha256 "d3fc54cef025f983b50baa8b6bada5f881485543148c0e6b380a1f0e409d93e5"
+      url "https://github.com/robsonferr/forgeai/releases/download/v0.5.0/forge-ai_0.5.0_darwin_x86_64.tar.gz"
+      sha256 "cfa3b647f4f137b500da1524a5d30af5ba5198971037e414d707a7e0437c5893"
 
       define_method(:install) do
         bin.install "forge-ai"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/robsonferr/forgeai/releases/download/v0.4.0/forge-ai_0.4.1-snapshot_darwin_arm64.tar.gz"
-      sha256 "b9ac0b08d35c6d053ec2b3275e30ad9867ed2c766bd43f3700b0bfbd96afc9f1"
+      url "https://github.com/robsonferr/forgeai/releases/download/v0.5.0/forge-ai_0.5.0_darwin_arm64.tar.gz"
+      sha256 "aa0f92bbdea4b692ed16a5cedaf3ace51c6e2e3bad41b3548d2a6c23a1f2136b"
 
       define_method(:install) do
         bin.install "forge-ai"
@@ -29,15 +29,15 @@ class ForgeAi < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/robsonferr/forgeai/releases/download/v0.4.0/forge-ai_0.4.1-snapshot_linux_x86_64.tar.gz"
-      sha256 "c7b6ea64526d558f583c7a1b33741c0e1049f9a8c742729bad9c9090d0777ef1"
+      url "https://github.com/robsonferr/forgeai/releases/download/v0.5.0/forge-ai_0.5.0_linux_x86_64.tar.gz"
+      sha256 "da0380f780da20f9c4046be992c01b8d8eeb2e6c85d17e0734cf900e13c2ec52"
       define_method(:install) do
         bin.install "forge-ai"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/robsonferr/forgeai/releases/download/v0.4.0/forge-ai_0.4.1-snapshot_linux_arm64.tar.gz"
-      sha256 "f690fd93fa01af3c4679b33d2725effe6520b0191a073c3b17ce79fc669cf847"
+      url "https://github.com/robsonferr/forgeai/releases/download/v0.5.0/forge-ai_0.5.0_linux_arm64.tar.gz"
+      sha256 "762c95f996f40eef6b7b337a476632659208f1cd6cef3230655c7c617316f269"
       define_method(:install) do
         bin.install "forge-ai"
       end
