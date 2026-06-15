@@ -11,7 +11,7 @@ class ForgeAi < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/robsonferr/forgeai/releases/download/v0.5.0/forge-ai_0.5.0_darwin_x86_64.tar.gz"
-      sha256 "cfa3b647f4f137b500da1524a5d30af5ba5198971037e414d707a7e0437c5893"
+      sha256 "5c1b384a53f8780a7656aa4f5869e43ef0cda623ab06b2b1dc346e59525a0027"
 
       define_method(:install) do
         bin.install "forge-ai"
@@ -19,7 +19,7 @@ class ForgeAi < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/robsonferr/forgeai/releases/download/v0.5.0/forge-ai_0.5.0_darwin_arm64.tar.gz"
-      sha256 "aa0f92bbdea4b692ed16a5cedaf3ace51c6e2e3bad41b3548d2a6c23a1f2136b"
+      sha256 "39cfc4f07e777b1f6e732cfd4124fca1f4e45c96f1d594f0ddd018a7a74a6da7"
 
       define_method(:install) do
         bin.install "forge-ai"
@@ -30,14 +30,14 @@ class ForgeAi < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/robsonferr/forgeai/releases/download/v0.5.0/forge-ai_0.5.0_linux_x86_64.tar.gz"
-      sha256 "da0380f780da20f9c4046be992c01b8d8eeb2e6c85d17e0734cf900e13c2ec52"
+      sha256 "cc0f44b9122c1415ab2f0543cefc5979f1f4b4237f394a4bdf0d3039633be356"
       define_method(:install) do
         bin.install "forge-ai"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/robsonferr/forgeai/releases/download/v0.5.0/forge-ai_0.5.0_linux_arm64.tar.gz"
-      sha256 "762c95f996f40eef6b7b337a476632659208f1cd6cef3230655c7c617316f269"
+      sha256 "8e4eac95f45032c9604fdd930c31f18ef331819e4da2d80127d2c77b1e69e8af"
       define_method(:install) do
         bin.install "forge-ai"
       end
